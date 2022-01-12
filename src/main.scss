@@ -1,4 +1,5 @@
-/*
+/* 
+    --- TODO: SASS VARIABLES NOT WORKING WITH BOOTSTRAP ---
 $primary: #66FCF1;
 $secondary: #045A29;
 $background: #0B0C10;
@@ -6,17 +7,32 @@ $background-secondary: #1F2833;
 $gray: #C5C6C7;
 */
 
+/* General CSS Settings Start */
 h1, h2, h3, h4, h5 {
     font-weight: 300;
 }
 
+h3 {
+    font-size: 1.5em;
+    color: #66FCF1;
+}
+
 a {
-    color: #66FCF1 !important; 
+    color: #66FCF1;
 }
 
 input {
     background-color: #1F2833 !important;
     color: #66FCF1 !important;
+}
+
+img {
+    filter: grayscale(10%) brightness(0.85);
+    border: 1px solid #66FCF1;
+}
+
+img.rounded-circle {    
+    filter: none;
 }
 
 .btn-main {
@@ -27,6 +43,7 @@ input {
 body {
     font-family: 'Montserrat', sans-serif;
 }
+/* General CSS Settings Start */
 
 /* Header Start*/
 .navbar {
@@ -41,9 +58,63 @@ body {
 /* Header End*/
 
 /* Hero Section Start*/
+.hero {
+    background-color: #1F2833
+}
 
-/* Hero Section Start*/
+.hero-post {    
+    position: relative;
+}
 
+.hero-post:hover {
+    filter:grayscale(0%) brightness(1);
+    transform: scale(1.025);
+    transition: 0.33s;
+    cursor: pointer;  
+}
+
+.hero-post img:hover {
+    filter:grayscale(0%) brightness(1);    
+    transition: 0.33s;
+}
+
+.hero-post-badges {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.hero-post-badges > a {
+    display: block;
+    background-color: #0B0C10;
+    color: #66FCF1;
+    font-size: 0.8em;
+    text-decoration:none;
+}
+
+.hero-post-content {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 10px;
+    color: #66FCF1;
+}
+
+.hero-post-content img {
+    border: 2px solid #66FCF1;
+}
+/* Hero Section End*/
+
+/* Blog Start */
+.blog-posts {
+    background-color: #0B0C10;
+    color: #C5C6C7;
+}
+
+.blog-post {
+    background-color: #1F2833;
+    padding: 10px;
+}
+/* Blog End */
 
 
 
