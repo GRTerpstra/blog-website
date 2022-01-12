@@ -1,13 +1,14 @@
 /* 
     --- TODO: SASS VARIABLES NOT WORKING WITH BOOTSTRAP ---
 $primary: #66FCF1;
-$secondary: #045A29;
+$secondary: #45A298;
 $background: #0B0C10;
 $background-secondary: #1F2833;
 $gray: #C5C6C7;
 */
 
 /* General CSS Settings Start */
+
 h1, h2, h3, h4, h5 {
     font-weight: 300;
 }
@@ -18,7 +19,8 @@ h3 {
 }
 
 a {
-    color: #66FCF1;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 input {
@@ -48,12 +50,16 @@ body {
 /* Header Start*/
 .navbar {
     background-color: #0B0C10;
+}
+
+.navbar-brand, .footer-logo {
+    font-weight: 700;
+    font-size: 2rem;    
     color: #66FCF1 !important;
 }
 
-.navbar-brand {
-    font-weight: 700;
-    font-size: 2rem;
+.nav-link {    
+    color: #66FCF1 !important;
 }
 /* Header End*/
 
@@ -112,9 +118,101 @@ body {
 
 .blog-post {
     background-color: #1F2833;
-    padding: 10px;
+}
+
+.blog-post h3 {
+    font-size: 1.2em;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-post p {
+    font-size: 0.9em;
+}
+
+.blog-post .col-sm-8 {
+    border-left: 3px solid #66FCF1;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.badge {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.badge > a {
+    margin-left: 0.5em;
+    padding: 0.8em;
+    background-color:#66FCF1;
+    color: #0B0C10;
 }
 /* Blog End */
 
+/* Aside Start */
+    .social-links {
+        background-color: #66FCF1;
+        font-size: 2em;
+    }
 
+    .social-links i {           
+        color: #0B0C10;
+    }
 
+    .secondary-color {
+        background-color: #1F2833;
+    }
+
+    .secondary-color i {        
+        color: #66FCF1;
+    }
+
+    .author p {
+        font-size: 0.85em;
+    }
+
+    .author i {
+        margin-right: 0.8em;
+        color: #66FCF1 !important;
+    }
+
+    .badges {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+    .badges > a {
+        display: inline-block;
+        margin-left: 0.5em;        
+        margin: 0.2em;
+        padding: 0.8em;
+        background-color:#66FCF1;
+        color: #0B0C10;
+    }
+    
+/* Aside End */
+
+/* Footer Start */
+
+.footer {
+    background-color: #1f2833;
+    color: #C5C6C7;
+}
+
+.footer p {
+    font-size: 0.85em;
+}
+
+.footer a {    
+    color: #66FCF1 !important;
+}
+
+.footer input {
+    background-color: #0B0C10 !important;
+}
+
+/* Footer End */
